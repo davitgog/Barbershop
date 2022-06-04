@@ -1,10 +1,16 @@
 import React from 'react';
+import Footer from './components/Footer';
+import Front from './components/Front';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div>
+        <Navbar/>
+        <Front/>
+        <Footer/>
+    </div>
+
   );
 }
 
