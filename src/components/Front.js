@@ -1,4 +1,6 @@
 import React from 'react'
+import SimpleImageSlider from "react-simple-image-slider"
+import images from '../assets/Images'
 
 function Front() {
   return (
@@ -12,8 +14,17 @@ function Front() {
         <p className='md:text-2xl text-xl font-bold text-gray-500'>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button className='bg-[#00d994] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get Started</button>
       </div>
+      <div className='w-full mx-auto flex justify-center py-2'>
+      <SimpleImageSlider
+        width={900}
+        height={600}
+        images={images}
+        showBullets={true}
+        showNavs={true}
+      />
+      </div>
+
     </div>
   )
 }
